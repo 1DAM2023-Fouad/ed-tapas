@@ -8,6 +8,6 @@ Casos de uso a implementar:
 - Eliminar tapa
 - Obtener un listado con todas las tapas.
 - Obtener una tapa en concreto.
-- Modificar una tapa.
+- Modificar una tapa..
 
 Url de la app a implementar: https://play.google.com/store/apps/details?id=com.jmperezra.avilaentapas
