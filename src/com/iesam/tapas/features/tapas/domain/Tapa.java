@@ -3,14 +3,14 @@ package com.iesam.tapas.features.tapas.domain;
 public class Tapa {
 
     //Atributos
-    private String id;
-    private String nombre;
-    private String nombreEstablecimiento;
-    private String totalPuntos;
-    private String mediaVotos;
-    private String numeroParticipantes;
-    private String totalVotos;
-    private String ingredientes;
+    public  final String id;
+    private final String nombre;
+    private final String nombreEstablecimiento;
+    private final String totalPuntos;
+    private final String mediaVotos;
+    private final String numeroParticipantes;
+    private final String totalVotos;
+    private final String ingredientes;
 
     //Constructor
     public Tapa(String id, String nombre, String nombreEstablecimiento, String totalPuntos, String mediaVotos, String numeroParticipantes, String totalVotos, String ingredientes) {
@@ -24,71 +24,9 @@ public class Tapa {
         this.ingredientes = ingredientes;
     }
 
-
-    //Getter y setter
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getNombreEstablecimiento() {
-        return nombreEstablecimiento;
-    }
-
-    public void setNombreEstablecimiento(String nombreEstablecimiento) {
-        this.nombreEstablecimiento = nombreEstablecimiento;
-    }
-
-    public String getTotalPuntos() {
-        return totalPuntos;
-    }
-
-    public void setTotalPuntos(String totalPuntos) {
-        this.totalPuntos = totalPuntos;
-    }
-
-    public String getMediaVotos() {
-        return mediaVotos;
-    }
-
-    public void setMediaVotos(String mediaVotos) {
-        this.mediaVotos = mediaVotos;
-    }
-
-    public String getNumeroParticipantes() {
-        return numeroParticipantes;
-    }
-
-    public void setNumeroParticipantes(String numeroParticipantes) {
-        this.numeroParticipantes = numeroParticipantes;
-    }
-
-    public String getTotalVotos() {
-        return totalVotos;
-    }
-
-    public void setTotalVotos(String totalVotos) {
-        this.totalVotos = totalVotos;
-    }
-
-    public String getIngredientes() {
-        return ingredientes;
-    }
-
-    public void setIngredientes(String ingredientes) {
-        this.ingredientes = ingredientes;
-    }
+    /*
+    * Al poner final, el método set no funciona, también ponemos el atributo id en publico
+    * para que en TapaDataRepository pueda acceder a el*/
 
     //toString
 

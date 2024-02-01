@@ -13,4 +13,6 @@ public interface TapaRepository {
 
     void updateTapa(Tapa tapa);     //UpdateTapaUseCase
     void saveTapa(Tapa tapa);    //SaveTapaUseCase
+
+    //Abstarcción es lo mismo que interfaz
 }
