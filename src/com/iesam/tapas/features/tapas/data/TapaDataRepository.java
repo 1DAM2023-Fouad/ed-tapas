@@ -26,7 +26,7 @@ public class TapaDataRepository implements TapaRepository {
 
     @Override   //Método GetTapasUseCase
     public ArrayList<Tapa> obtainTapas() {
-        return localTapas;
+         return localTapas;
     }
 
     @Override   //Método DeleteTapaUseCase
