@@ -17,7 +17,7 @@ public class TapaDataRepository implements TapaRepository {
         //Declaración variable tapa
         for(int i=0;i<localTapas.size();i++){
             Tapa tapa = localTapas.get(i);
-            if (tapa.getId().equals(tapaId)){
+            if (tapa.id.equals(tapaId)){
                 return tapa;
             } //El profesor lo ha hecho con un for-each, pero es lo mismo
         }
@@ -32,7 +32,7 @@ public class TapaDataRepository implements TapaRepository {
     @Override   //Método DeleteTapaUseCase
     public void deleteTapa(String tapaId) {
         for(int i=0;i<localTapas.size();i++){
-            if(localTapas.get(i).getId().equals(tapaId)){
+            if(localTapas.get(i).id.equals(tapaId)){
                 localTapas.remove(i);
             }
         }
@@ -40,7 +40,7 @@ public class TapaDataRepository implements TapaRepository {
 
     @Override   //Método UpdateTapaUseCase
     public void updateTapa(Tapa tapa) {
-        deleteTapa(tapa.getId()); //Primero buscamos una tapa con el id, luego se borra
+        deleteTapa(tapa.id); //Primero buscamos una tapa con el id, luego se borra
         saveTapa(tapa);     //Luego la sustituye con la tapa nueva  (la tapa nueva tien modificacoines)
     }                   //Por útlimo, guardar una tapa haciendo uso del UseCase de guardar
 

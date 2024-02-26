@@ -3,14 +3,14 @@ package com.iesam.tapas.features.tapas.domain;
 public class Tapa {
 
     //Atributos
-    private String id;
-    private String nombre;
-    private String nombreEstablecimiento;
-    private String totalPuntos;
-    private String mediaVotos;
-    private String numeroParticipantes;
-    private String totalVotos;
-    private String ingredientes;
+    public final String id;
+    public final String nombre;
+    public final String nombreEstablecimiento;
+    public final String totalPuntos;
+    public final String mediaVotos;
+    public final String numeroParticipantes;
+    public final String totalVotos;
+    public final String ingredientes;
 
     //Constructor
     public Tapa(String id, String nombre, String nombreEstablecimiento, String totalPuntos, String mediaVotos, String numeroParticipantes, String totalVotos, String ingredientes) {
@@ -24,7 +24,7 @@ public class Tapa {
         this.ingredientes = ingredientes;
     }
 
-
+/* Al poner los atributos como public, esto no hace falta
     //Getter y setter
     public String getId() {
         return id;
@@ -89,7 +89,7 @@ public class Tapa {
     public void setIngredientes(String ingredientes) {
         this.ingredientes = ingredientes;
     }
-
+*/
     //toString
 
     @Override
